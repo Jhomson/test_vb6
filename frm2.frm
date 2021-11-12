@@ -134,7 +134,7 @@ Begin VB.Form frm2
       Width           =   855
    End
    Begin VB.Label Label2 
-      Caption         =   "Se muestran los items:"
+      Caption         =   "Se muestran los items"
       BeginProperty Font 
          Name            =   "Arial"
          Size            =   9.75
@@ -367,7 +367,6 @@ End Function
 
 Private Function get_pokeinfo()
 
-    Dim obj As Object
     Dim texto As String
     Dim sinputjson As String
     Dim nombre As String
@@ -393,6 +392,10 @@ Private Function get_pokeinfo()
     End If
     
 End Function
+
+Private Sub Label2_Click()
+
+End Sub
 
 Private Sub nextbtn_Click()
     Dim texto As String
