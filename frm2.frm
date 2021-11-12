@@ -188,17 +188,17 @@ Public Sub navegar_lista(cant_mostrada As Integer, texto As String)
     html = "<html>" & _
             "<head>" & _
                 "<style type='text/css'>" & _
-                    "#container_global div{float: left; margin: 10px;}" & _
+                    "#container_global div{float: left; margin: 10px; background-color: silver;} #container_global div img{width: 100%; height: 100px;}" & _
                 "</style>" & _
             "</head>" & _
             "<body>" & _
-                "<div id='container_global' style='width:900px; height:600px; border:1px solid black;'>"
+                "<div id='container_global' style='width:880px; height:600px;'>"
                 
     For reg = 1 To cant_mostrada
     
-    html = html & "<div style='width:150px; height:100px; border:1px solid black;'>" & _
-                    "<p align = 'center'>Nombre: " & data_poke(reg, 0) & "</p>" & _
+    html = html & "<div style='width:190px; height:200px;'>" & _
                     "<img src=""" & data_poke(reg, 1) & """>" & _
+                    "<p align = 'center'><strong>" & data_poke(reg, 0) & "</strong></p>" & _
                     "</div>"
     Next reg
                 
